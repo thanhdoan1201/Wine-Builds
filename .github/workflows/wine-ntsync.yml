@@ -26,8 +26,7 @@ jobs:
           chmod +x build_wine.sh
           WINE_BRANCH=staging-tkg-ntsync ./build_wine.sh
           sha256sum *.tar.xz
-      - 
-  uses: actions/upload-artifact@v4.3.4
+      - uses: actions/upload-artifact@v4.3.4
         with:
           name: Wine-Staging-TkG-ntsync
           path: ./*.tar.xz
